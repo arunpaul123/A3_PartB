@@ -24,6 +24,13 @@ public class ArithmeticTest {
 		assertEquals(expected, actual);
 	}
 	
+	@Test
+	public void testSubtract() {
+		expected = a-b;
+		actual = testObj.subtract(a, b);
+		assertEquals(expected, actual);
+	}
+	
 	@After
 	public void tearDown() throws Exception {
 		testObj = null;
